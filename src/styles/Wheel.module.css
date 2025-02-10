@@ -1,0 +1,198 @@
+.wheelContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+  position: relative;
+}
+.wheel_bg {
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg
+  );
+}
+.wheel_bg_0 {
+background: conic-gradient(
+    #fafafa 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_1{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #fafafa 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_2{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #fafafa 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_3{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #fafafa 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_4{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #fafafa 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_5{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #fafafa 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_6{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #fafafa 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_7{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #fafafa 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_8{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #fafafa 288deg 324deg,
+    #ffe5b4 324deg 360deg  
+  );
+}
+.wheel_bg_9{
+background: conic-gradient(
+    #ffcccc 0deg 36deg,
+    #ffe5b4 36deg 72deg,
+    #ffcccc 72deg 108deg,
+    #ffe5b4 108deg 144deg,
+    #ffcccc 144deg 180deg,
+    #ffe5b4 180deg 216deg,
+    #ffcccc 216deg 252deg,
+    #ffe5b4 252deg 288deg,
+    #ffcccc 288deg 324deg,
+    #fafafa 324deg 360deg  
+  );
+}
+
+.slice {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 0;
+  transform-origin: 0% 100%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: rotate(45deg);
+  font-weight: bold;
+}
+
+.pointer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #000;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
