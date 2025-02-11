@@ -13,20 +13,22 @@ interface WheelProps {
 const Wheel: React.FC<WheelProps> = ({ spinning, onSpinComplete }) => {
   const [rotation, setRotation] = useState(0);
   const [winSlice, setWinSlice] = useState(-1);
+  const [duration, setDuration] = useState(0);
 
   useEffect(() => {
     if (spinning) {
       setWinSlice(-1);
       const spinDuration = 8000 + Math.random() * 2000; // 8-10 seconds
+      setDuration(spinDuration);
       const totalRotation = rotation + 3600 + Math.floor(Math.random() * 360); // 10+ full rotations
 
       setRotation(totalRotation);
 
       const timer = setTimeout(() => {
-        const finalRotation = totalRotation % 360;
-        const winIndex = Math.floor(
+        let winIndex = Math.floor(
           (360 - (totalRotation % 360)) / (360 / SLICE_COUNT)
         );
+        if (winIndex === 0) winIndex = 10;
         onSpinComplete(winIndex * 10);
         setWinSlice(winIndex);
       }, spinDuration);
@@ -44,9 +46,7 @@ const Wheel: React.FC<WheelProps> = ({ spinning, onSpinComplete }) => {
         style={{
           transform: `rotate(${rotation}deg)`,
           transition: spinning
-            ? `transform ${
-                8 + Math.random() * 2
-              }s cubic-bezier(0.25, 0.1, 0.25, 1)`
+            ? `transform ${duration}ms cubic-bezier(0.25, 0.1, 0.25, 1)`
             : "none",
         }}
       >

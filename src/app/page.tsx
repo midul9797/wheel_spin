@@ -35,7 +35,7 @@ export default function SpinTheWheel() {
       <Button
         onClick={handleSpin}
         disabled={spinning || spins.length >= TOTAL_SPINS}
-        className="mb-4"
+        className="my-4"
       >
         {spinning ? "Spinning..." : "Spin"}
       </Button>
